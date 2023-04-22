@@ -83,6 +83,7 @@ type Server struct {
 	index  *controller.IndexController
 	server *controller.ServerController
 	xui    *controller.XUIController
+	api    *controller.APIController
 
 	xrayService    service.XrayService
 	settingService service.SettingService
