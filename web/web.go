@@ -206,6 +206,8 @@ func (s *Server) initRouter() (*gin.Engine, error) {
 	s.index = controller.NewIndexController(g)
 	s.server = controller.NewServerController(g)
 	s.xui = controller.NewXUIController(g)
+	s.api = controller.NewAPIController(g)
+
 
 	return engine, nil
 }
